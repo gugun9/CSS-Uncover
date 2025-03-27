@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.container{
+            margin: 0 auto;
+            width: 800px;
+            height: 500px;
+            border: 2px solid yellow;
+            background: url(asset/gugun.jpg);
+        }
+        p{
+            background-color: white;
+        }
+        .box{
+            width: 180px;
+            height: 480px;
+            padding: 10px;
+            border: 5px solid green;
+            margin: 10px;
+            float: left;
+            background-color: red;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"><p>HTML</p></div>
+        <div class="box"><p>CSS</p></div>
+        <div class="box"><p>C++</p></div>
+        <div class="box"><p>C#</p></div>
+    </div>
+</body>
+</html>
