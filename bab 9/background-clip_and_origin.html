@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin</title>
+    <style>
+        div{
+            width: 230px;
+            height: 130px;
+            text-align: center;
+            float: left;
+            color: #000;
+            font-size: 25px;
+            border: 10px dashed yellow;
+            padding: 10px;
+            margin: 10px;
+            background-image: url('asset/pemandangan\ 1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: blueviolet;
+        }
+        .satu{
+            background-origin: border-box;
+        }
+        .dua{
+            background-origin: padding-box;
+        }
+        .tiga{
+            background-origin: content-box;
+        }
+        .empat{
+            background-origin: border-box;
+        }
+        .lima{
+            background-origin: padding-box;
+        }
+        .enam{
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div><p>ITS <br>Institut Teknologi Surabaya</p></div>
+    <div class="satu"><p>UNMA</p> <br>Universitas Majalengka</p></div>
+    <div class="dua"><p>UNWIR <br>Universitas Wiraloda</p></div>
+    <div class="tiga"><p>UNU <br>Universitas nahdlatul Ulama</p></div>
+    <div><p>ITB <br>Institut Teknologi Surabaya</p></div>
+    <div class="empat"><p>UGM <br>Universitas Gadjah Mada</p></div>
+    <div class="lima"><p>TEL-U <br>Telkom University</p></div>
+    <div class="enam"><p>UI <br>Universitas Indonesia</p></div>
+</body>
+</html>
