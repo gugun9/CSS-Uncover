@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Static</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 500px;
+            background:  rgb(231, 232, 226);
+            margin: 0 auto;
+        }
+        .satu, .dua, .tiga{
+            width: 150px;
+            height: 150px;
+            font-size: 25px;
+            line-height: 150px;
+            text-align: center;
+            color: white;
+        }
+        .satu{
+            background-color: #FF1A00;
+            position: static;
+        }
+        .dua{
+            background-color: #008C00;
+        }
+        .tiga{
+            background-color: #4096EE;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">HTML</div>
+        <div class="dua">CSS</div>
+        <div class="tiga">Javascript</div>
+    </div>
+</body>
+</html>
