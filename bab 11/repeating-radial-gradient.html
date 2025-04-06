@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Radial Gradient</title>
+    <style>
+        div{
+            width: 500px;
+            height: 250px;
+            margin: 0 auto;
+            border: 2px solid black;
+            float: left;
+            margin: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .satu{
+            background-image: radial-gradient(circle, red, yellow 20%);
+        }
+        .dua{
+            background-image: radial-gradient(circle farthest-corner at right top,green, blue 10%, green 15%);
+        }
+        .tiga{
+            background-image: radial-gradient(circle farthest-corner at left, black, white 10px, black 15px);
+        }
+        .empat{
+            background-image: radial-gradient(circle farthest-corner, violet, orange 1px, violet 2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">HTML</div>
+    <div class="dua">CSS</div>
+    <div class="tiga">PHP</div>
+    <div class="empat">Javascript</div>
+</body>
+</html>
