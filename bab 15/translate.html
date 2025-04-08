@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        .container{
+            width: 800px;
+            margin: 30px auto;
+        }
+        .satu, .dua, .tiga, .empat{
+            width: 300px;
+            height: 100px;
+            background-color: #39B54A;
+            float: left;
+            margin: 50px;
+            color: white;
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .satu{
+            
+        }
+        .dua{
+            transform: translateX(20px) translateY(20px);
+        }
+        .tiga{
+            transform: translate(20px,20px);
+        }
+        .empat{
+            transform: translate(-20px,-40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">HTML</div>
+        <div class="dua">CSS</div>
+        <div class="tiga">GOLANG</div>
+        <div class="empat">C++</div>
+    </div>
+</body>
+</html>

@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Border image Repeat</title>
+    <title>Box Shadow Blur Radius</title>
     <style>
         .satu, .dua, .tiga, .empat{
             width: 200px;
             height: 200px;
             background-color: #39B54A;
             float: left;
-            margin-right: 20px;
-            border: 33px solid transparent;
-            font-size: 2em;
-            text-align: center;
-            line-height: 200px;
-            border-image-source: url('asset/border1.png');
-            border-image-slice: 33%;
+            margin: 30px 0 0 50px;
         }
         .satu{
-            border-image-repeat: stretch;
+            box-shadow: 10px 10px 2px;
         }
         .dua{
-            border-image-repeat: repeat;
+            box-shadow: 10px 10px 5px;
         }
         .tiga{
-            border-image-repeat: round;
+            box-shadow: 10px 10px 15px;
         }
         .empat{
-            border-image-repeat: space;
+            box-shadow: 10px 10px 30px;
         }
     </style>
 </head>
