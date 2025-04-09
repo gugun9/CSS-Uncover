@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Play State</title>
+    <style>
+        .container{
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid red ;
+        }
+        .satu{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+        }
+        @keyframes pindah2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 00px;
+                left: 900px;
+            }
+            50%{
+                top: 400px;
+                left: 900px;
+            }
+            75%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .satu{
+            animation-name: pindah2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        .satu:hover{
+            animation-play-state: paused;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">HTML</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Multiple</title>
+    <style>
+        .satu, .dua, .tiga, .empat{
+            width: 300px;
+            height: 50px;
+            background-color: green;
+            margin: 20px;
+            color: white;
+            font-size: 30px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .satu{
+            transition: all 2s ease-out 250ms;
+        }
+        .dua{
+            transition: width 1s, background-color 10s;
+        }
+        .tiga{
+            transition: width 1s, background-color 5s, color 10s;
+        }
+        .empat{
+            transition: width 100ms 1s, background-color 1s 3s, color 100ms 5s;
+        }
+        .satu:hover, .dua:hover, .tiga:hover, .empat:hover{
+            width: 800px;
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">HTMl</div>
+    <div class="dua">CSS</div>
+    <div class="tiga">Javascript</div>
+    <div class="empat">PHP</div>
+</body>
+</html>

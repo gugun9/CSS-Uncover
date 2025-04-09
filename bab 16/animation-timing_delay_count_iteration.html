@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Timing Delay Count Iteration</title>
+    <style>
+        .satu, .dua, .tiga, .empat, .lima {
+            width: 400px;
+            height: 50px;
+            margin: 20px;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            line-height: 50px;
+            padding-left: 10px;
+        }
+        @keyframes lebar-warna{
+            25%{
+                width: 500px;
+                background-color: red;
+            }
+            50%{
+                width: 200px;
+                background-color: black;
+            }
+            100%{
+                width: 900px;
+                background-color: pink;
+            }
+        }
+        .satu:hover,.dua:hover, .tiga:hover,.empat:hover,.lima:hover{
+            animation-name: lebar-warna;
+            animation-duration: 5s;
+        }
+        .satu{
+            animation-timing-function: linear;
+        }
+        .dua{
+            animation-timing-function: ease;
+            animation-delay: 2s;
+        }
+        .tiga{
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+        }
+        .empat{
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+        }
+        .lima{
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">HTML</div>
+    <div class="dua">CSS</div>
+    <div class="tiga">Javascript</div>
+    <div class="empat">PHP</div>
+    <div class="lima">Typescript</div>
+</body>
+</html>
