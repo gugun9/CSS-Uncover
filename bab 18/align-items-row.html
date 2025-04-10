@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justify Content Row-1</title>
+    <title>Align Items Row</title>
     <style>
         .container{
+            height: 100px;
+            border: 2px solid #965e15;
+            background-color: #AAE3A7;
             display: flex;
             flex-direction: row;
-        }
-        .box{
-            background-color: honeydew;
-            margin: 0.3em;
-            padding: 0.3em;
-        }
-        h2{
-            text-align: center;
-            font-family: lora,serif;
         }
     </style>
 </head>
 <body>
     <h2>jenis-Jenis Bahasa Pemrograman</h2>
-    <div class="container" tyle="justify-content: flex-start;">
+    <div class="container" style="align-items: stretch;">
         <div class="box">HTML</div>
         <div class="box">CSS</div>
         <div class="box">PHP</div>
     </div>
     <h2>jenis-Jenis RDBMS</h2>
-    <div class="container" style="justify-content: flex-end;">
+    <div class="container" style="align-items: flex-start;">
         <div class="box">SQL</div>
         <div class="box">MySQL</div>
         <div class="box">Mongo DB</div>
     </div>
     <h2>jenis-Jenis Software Desain</h2>
-    <div class="container" style="justify-content: center;">
+    <div class="container" style="align-items: flex-end;">
         <div class="box">Photoshop</div>
         <div class="box">Adobe Ilustrator</div>
         <div class="box">Canva</div>
+    </div>
+    <h2>jenis-Jenis Hardware</h2>
+    <div class="container" style="align-items: center;">
+        <div class="box">Mouse</div>
+        <div class="box">Keyboard</div>
+        <div class="box">Hardisk</div>
     </div>
 </body>
 </html>

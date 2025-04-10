@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content-1</title>
+    <style>
+        .container{
+            height: 90vh;
+            border: 2px solid #965e15;
+            background-color: #AAE3A7;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .box{
+            width: 200px;
+            background-color: #fff;
+            margin: 0.3em;
+            padding: 0.3em;
+        }
+        h3{
+            text-align: center;
+            font-family: lora,serif;
+            margin-bottom: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <h3>Negara Asia</h3>
+    <div class="container" style="align-content: flex-start;">
+        <div class="box">Indonesia</div>
+        <div class="box">Singapura</div>
+        <div class="box">Jepang</div>
+        <div class="box">Malaysia</div>
+        <div class="box">Korea</div>
+        <div class="box">China</div>
+    </div>
+    <h3>Negara Eropa</h3>
+    <div class="container" style="align-content: flex-end;">
+        <div class="box">Inggris</div>
+        <div class="box">Jerman</div>
+        <div class="box">Spanyol</div>
+        <div class="box">Belanda</div>
+        <div class="box">Belgia</div>
+        <div class="box">Italia</div>
+    </div>
+    <h3>Negara Amerika Latin</h3>
+    <div class="container" style="align-content: center;">
+        <div class="box">Brazil</div>
+        <div class="box">Argentina</div>
+        <div class="box">Colombia</div>
+        <div class="box">Uruguay</div>
+        <div class="box">Bolovia</div>
+        <div class="box">Ecuador</div>
+    </div>
+</body>
+</html>
