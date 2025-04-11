@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Rows</title>
+    <style>
+        .container{
+            border: 2px solid #965e15;
+            margin-top: 1em;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 80px;
+        }
+        .box{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 0.3em;
+        }
+        .box:nth-child(even){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">PHP</div>
+    </div>
+    <div class="container">
+        <div class="box">SQL</div>
+        <div class="box">MySQL</div>
+        <div class="box">Mongo DB</div>
+    </div>
+</body>
+</html>

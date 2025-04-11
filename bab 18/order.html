@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        .container{
+            height: 100px;
+            border: 2px solid #965e15;
+            background-color: #AAE3A7;
+            margin-top: 1em;
+            display: flex;
+        }
+        .box{
+            background-color: honeydew;
+            margin: 0.3em;
+            padding: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <h2>jenis-Jenis Bahasa Pemrograman</h2>
+    <div class="container">
+        <div class="box">HTML</div>
+        <div class="box" style="order: 0;">CSS</div>
+        <div class="box">PHP</div>
+    </div>
+    <h2>jenis-Jenis RDBMS</h2>
+    <div class="container">
+        <div class="box">SQL</div>
+        <div class="box" style="order: 1;">MySQL</div>
+        <div class="box">Mongo DB</div>
+    </div>
+    <h2>jenis-Jenis Software Desain</h2>
+    <div class="container">
+        <div class="box">Photoshop</div>
+        <div class="box" style="order: -1;">Adobe Ilustrator</div>
+        <div class="box">Canva</div>
+    </div>
+    <h2>jenis-Jenis Hardware</h2>
+    <div class="container">
+        <div class="box" style="order: 3;">Mouse</div>
+        <div class="box" style="order: 1;">Keyboard</div>
+        <div class="box" style="order: 2;">Hardisk</div>
+    </div>
+</body>
+</html>

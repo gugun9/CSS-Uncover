@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        .container{
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .container>*{
+            padding: 10px;
+            flex-basis: 10%;
+        }
+        .header{
+            background-color: #04bcc5;
+        }
+        .main{
+            background-color: #666666;
+        }
+        .sidebar-1{
+            background-color: #cf781e;
+        }
+        .sidebar-2{
+            background-color: #eb596e;
+        }
+        .footer{
+            background-color: #252a34;
+        }
+        @media all and (min-width: 600px){
+            .sidebar-1{
+                flex-basis:auto; flex-grow: 1;
+            }
+            .sidebar-2{
+                flex-basis:auto; flex-grow: 1;
+            }
+        }
+        @media all and (min-width: 900px){
+            .header{
+                order: 1;
+            }
+            .header{
+                order: 2;
+            }
+            .header{
+                order: 3;
+                flex-basis:50%; 
+                flex-grow: 1;
+            }
+            .header{
+                order: 4;
+            }
+            .header{
+                order: 5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <header class="header">Header</header>
+       <article class="main">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco labor
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+       </article>
+       <aside class="sidebar-1">sidebar 1</aside>
+       <aside class="sidebar-2">sidebar 2</aside>
+       <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

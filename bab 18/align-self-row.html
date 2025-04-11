@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self Row</title>
+    <style>
+        .container{
+            height: 150px;
+            border: 2px solid #965e15;
+            background-color: #AAE3A7;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .box{
+            background-color: honeydew;
+            margin: 0.3em;
+            padding: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">HTML</div>
+        <div class="box" style="align-self: flex-end;">CSS</div>
+        <div class="box">PHP</div>
+    </div>
+    <div class="container">
+        <div class="box">SQL</div>
+        <div class="box" style="align-self: center;">MySQL</div>
+        <div class="box">Mongo DB</div>
+    </div>
+    <div class="container">
+        <div class="box">Photoshop</div>
+        <div class="box" style="align-self:stretch;">Adobe Ilustrator</div>
+        <div class="box">Canva</div>
+    </div>
+</body>
+</html>
