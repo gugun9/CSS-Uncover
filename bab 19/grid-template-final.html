@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Final</title>
+    <style>
+        .container{
+            border: 2px solid #965e15;
+            margin-top: 1em;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 80px;
+            gap: 0.2rem;
+        }
+        .box{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 0.3em;
+        }
+        .box:nth-child(even){
+            background-color: red;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .main{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .sidebar{
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+        .footer{
+            grid-column: 1/span 3;
+            grid-row: 4/span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">HTML</div>
+        <div class="box main">CSS</div>
+        <div class="box sidebar">PHP</div>
+        <div class="box footer">PHP</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container{
+            border: 2px solid #965e15;
+            margin-top: 1em;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 80px;
+            gap: 0.2rem;
+            grid-template-areas: "header header header" "main main sidebar" 
+                                 "main main sidebar" "footer footer footer";
+        }
+        .box{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 0.3em;
+        }
+        .box:nth-child(even){
+            background-color: red;
+        }
+        .header{
+            grid-area: header;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">HTML</div>
+        <div class="box main">CSS</div>
+        <div class="box sidebar">PHP</div>
+        <div class="box footer">PHP</div>
+    </div>
+</body>
+</html>
