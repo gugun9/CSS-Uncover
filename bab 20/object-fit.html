@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        img{
+            margin: 10px;
+            border: 2px solid red;
+            padding: 3px;
+        }
+        .crop{
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="asset/kue.jpg">
+    <img src="asset/kue.jpg" class="crop" style="object-fit: fill;">
+    <img src="asset/kue.jpg" class="crop" style="object-fit: contain;">
+    <img src="asset/kue.jpg" class="crop" style="object-fit: cover;">
+    <img src="asset/kue.jpg" class="crop" style="object-fit: none;">
+    <img src="asset/kue.jpg" class="crop" style="object-fit: scale-down;">
+</body>
+</html>
