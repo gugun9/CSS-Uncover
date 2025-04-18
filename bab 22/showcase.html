@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html, body, h1{
+            padding: 0;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .showcase{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .showcase-image, .showcase-text{
+            width: 50%;
+            margin: 1em;
+        }
+        .showcase-image img{
+            width: 100%;
+            border: 1px solid silver;
+            padding: 0.3rem;
+            box-shadow: 2px 2px 5px black;
+        }
+        @media screen and (max-width: 768px){
+            .showcase{
+                flex-direction: column;
+                padding: 1em 2em ;
+            }
+            .showcase-image, .showcase-text{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="showcase-image">
+            <img src="asset/makanan.jpg" alt="">
+        </div>
+        <div class="showcase-text">
+            <h1>Sejarah Sate</h1>
+            <p>Sate merupakan makanan khas Indonesia yang berasal dari Jawa. Sate memiliki sejarah panjang yang melibatkan berbagai pengaruh budaya, termasuk dari India, Arab, dan Melayu.</p>
+        </div>
+    </section>
+</body>
+</html>
